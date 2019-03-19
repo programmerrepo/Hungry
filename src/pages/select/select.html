@@ -1,0 +1,80 @@
+<!--
+  Generated template for the SelectPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add To Order</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  
+  <ion-card>
+  <img src="assets/m1 (1).jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Price : 20 EGP.
+      </ion-card-title>
+
+  </ion-card-content>
+</ion-card>
+  
+
+  
+   <ion-list radio-group [(ngModel)]="autoManufacturers">
+
+  <ion-list-header>
+    Size
+  </ion-list-header>
+
+  <ion-item>
+    <ion-label>Small</ion-label>
+    <ion-radio value="sm"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Medium</ion-label>
+    <ion-radio value="me"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Large</ion-label>
+    <ion-radio value="la"></ion-radio>
+  </ion-item>
+    
+      </ion-list>
+
+
+  
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating>Special request?<p>(Optional)</p></ion-label> 
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+  
+  
+  <div padding>
+    
+  <ion-item>
+    <ion-range min="1" max="200" [(ngModel)]="saturation" color="secondary">
+      <ion-label range-left>1</ion-label>
+      <ion-label range-right>200</ion-label>
+    </ion-range>
+  </ion-item>
+    
+  </div>
+  
+     <button ion-button round style="margin-left:55px;">Add To Order List 20 EGP</button> 
+
+</ion-content>

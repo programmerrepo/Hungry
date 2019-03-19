@@ -1,0 +1,201 @@
+
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Restaurant Menu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  
+   <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        Meals
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        Dessert
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+        Drinks
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+   
+   
+   <div  [ngSwitch]="pet">
+    
+    
+    <ion-list *ngSwitchCase="'puppies'">
+      <ion-card>
+  <img src="assets/m1.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px" (click)="goToSelect()">Price on selection</button>
+  </ion-card-content>
+ 
+</ion-card>
+      
+      
+      <ion-card>
+  <img src="assets/m1 (1).png"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+
+</ion-card>
+      
+      
+      <ion-card>
+  <img src="assets/m1 (2).png"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+
+</ion-card>
+      
+      
+      <ion-card>
+  <img src="assets/m1 (3).jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+
+</ion-card>
+      
+    </ion-list>
+
+
+
+
+<ion-list *ngSwitchCase="'kittens'">
+  <ion-card>
+  <img src="assets/d3.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+ 
+</ion-card>
+  
+  
+  
+  <ion-card>
+  <img src="assets/d1.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+  
+</ion-card>
+  
+  
+  
+  <ion-card>
+  <img src="assets/d2.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+ 
+</ion-card>
+  
+    </ion-list>
+
+
+
+
+
+<ion-list *ngSwitchCase="'ducklings'">
+  
+  
+<ion-card>
+  <img src="assets/dr2.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+    <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+</ion-card>
+     
+     
+<ion-card>
+  <img src="assets/dr1.jpg"/>
+  <ion-card-content>
+    <ion-card-title>
+      Nine Inch Nails Live
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+      <button ion-button  round style="margin-left: 90px">Price on selection</button>
+  </ion-card-content>
+
+</ion-card>     
+
+    </ion-list>
+
+    
+    
+    
+    
+    
+    
+   </div>
+
+</ion-content>

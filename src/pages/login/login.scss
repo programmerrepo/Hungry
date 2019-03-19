@@ -1,0 +1,77 @@
+page-login {
+
+}
+
+  .facebook{
+    background-color: #3b5998;;
+  }
+  
+.card-background-page {
+
+background: #FFFFFF;
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+  
+    .facebook{
+    background-color: #3b5998;
+         font-size: 11px;
+         font-weight: bold;
+         
+  }
+  
+  .google{
+    background-color: #d13d35;
+   font-size: 10px;
+  }
+  
+  
+   .socialLogin {
+    float: left;
+    width: 100%;
+   
+  }
+  
+  
+    .sepretor-or p {
+    color: #474343  ;
+    font-size: 16px;
+    text-transform: lowercase;
+  }
+  
+   .sepretor-or p::before,
+  .sepretor-or p::after {
+    float: left;
+    width: -webkit-calc(48% - 10px);
+    width: -moz-calc(48% - 10px);
+    width: calc(48% - 10px);
+    display: inline-block;
+    height: 1px;
+    margin-top: 8px;
+    background-image: url('assets/seprator.png');
+    background-repeat: repeat;
+    content: '';
+  }
+  .sepretor-or p::after {
+    float: right;
+  }
+}
